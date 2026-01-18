@@ -54,6 +54,7 @@ A responsive micro landing page for **DailyBread**, a fictional bakery brand off
 
 This folder contains adapted visual assets derived from a master design and resized for different media formats while maintaining readability and visual consistency.
 
+- **Link Figma**:[https://www.figma.com/design/GUceLYH0hKruz3fTZdnYuB/Visual-Slicing---Adaptation?node-id=0-1&t=A4ED0hwEMmJEJqdP-1]
 - **Print Ad** – 100 × 150 mm  
 - **Instagram Post** – 1080 × 1080 px  
 - **Banner Ad** – 300 × 250 px  
