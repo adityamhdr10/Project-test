@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Banner 300x250</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Bebas Neue", sans-serif;
+        background: #e5e7eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .banner {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(
+          135deg,
+          #375892 0%,
+          #00183b 40%,
+          #1d1d1d 100%
+        );
+        width: 160px;
+        height: 600px;
+        padding: 1rem;
+        cursor: pointer;
+      }
+
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 30px;
+      }
+
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        gap: 2rem;
+      }
+
+      .right-side img {
+        width: 140px;
+        height: auto;
+        display: block;
+      }
+
+      .headline {
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.07rem;
+        text-align: center;
+      }
+
+      .subhead {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          135deg,
+          #5b5b5b 0%,
+          #00183b 40%,
+          #282828 100%
+        );
+        padding: 0.2rem;
+        font-size: 12px;
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ffffff;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        color: #e5e7eb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="banner"   onclick="window.open(clickTag, '_blank')">
+      <div class="left-side">
+        <div class="headline">
+          SUARA JERNIH.<br />
+          TANPA KABEL.<br />
+          TANPA GANGGUAN.
+        </div>
+        <div class="subhead">
+          Teknologi Active Noise Cancelling untuk fokus total Anda.
+        </div>
+      </div>
+
+      <div class="right-side">
+        <img src="images/earphone2.png" alt="Galaxy Buds 3 Pro" />
+        <div class="cta">> DENGAR PERBEDAANNYA</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var clickTag = "https://www.amazon.com/Bluetooth-Headphones-Cancelling-Earphones-Waterproof/dp/B0G4R4KCNM/ref=sr_1_7_sspa?adgrpid=167283298957&dib=eyJ2IjoiMSJ9.dAKxsaTZ2KMc_dg5T5mYUtAV2xRCHupZ9YxqQ8MuEggK_uwd9YL0xpBKiPgP0cd5C_o4CrZL_2gDR2G4JsyKNStSZ7mfnf5egCWjdgZc0xeIZ2tZtVE7fG0-grte4WvFPlzKEzEORAr0ZnN-kU0qKyPDsCom82MjkoPjDhDw4ezPRaQOiYIME1Nanw2KboJvNPZFMHnyjMhfpDMp4suG7YrmtaOH1xOrAgATqkSIrf4.I0gkBbMAb-lAhUoha9pyWODEJyHEdAh38QB7J4y_AAM&dib_tag=se&hvadid=713116029088&hvdev=c&hvlocphy=9126750&hvnetw=g&hvqmt=b&hvrand=12563435675993031666&hvtargid=kwd-295756605026&hydadcr=8224_13674385&keywords=ear%2Bbuds%2Bapple&mcid=065be309711a3a9bb1229ad50b54c8ce&qid=1768724188&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1";
+  const tl = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 1,
+  });
+
+  tl.from(".headline", {
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    ease: "power2.out",
+  })
+
+    .from(
+      ".subhead",
+      {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        ease: "power2.out",
+      },
+      "-=0.3"
+    )
+
+    .from(
+      ".right-side img",
+      {
+        opacity: 0,
+        x: 30,
+        scale: 0.9,
+        duration: 0.6,
+        ease: "power2.out",
+      },
+      "-=0.2"
+    )
+
+    .from(".cta", {
+      opacity: 0,
+      scale: 0.8,
+      duration: 0.4,
+      ease: "back.out(1.7)",
+    })
+
+    .to({}, { duration: 1.5 });
+</script>
