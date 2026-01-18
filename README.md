@@ -55,8 +55,3 @@ This folder contains adapted visual assets derived from a master design and resi
 - **Email Header** – 600 × 200 px  
 
 ---
-
-## Notes
-
-- All banners are designed to be lightweight and follow HTML5 advertising best practices.
-- Visual consistency is maintained across all formats.
