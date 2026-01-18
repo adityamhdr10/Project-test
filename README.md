@@ -43,7 +43,7 @@ An interactive HTML5 banner showcasing a before-and-after effect using a draggab
 
 A responsive micro landing page for **DailyBread**, a fictional bakery brand offering fresh, organic bread delivery. The page is optimized for performance and conversion.
 
-- **Live Demo**: [https://your-deployed-url.com](https://daily-bread-landing-page.vercel.app/)
+- **Live Demo**: [https://daily-bread-landing-page.vercel.app/]
 - **index.html** – Main landing page structure  
 - **style.css** – Styling and layout  
 - **images/** – Product and visual assets  
