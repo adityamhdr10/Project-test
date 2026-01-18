@@ -1,11 +1,5 @@
 # Technical Test – HTML5 Ads & Micro Landing Page
 
-This repository contains the deliverables for a front-end technical test, focusing on HTML5 advertisements, interactive ads, responsive landing pages, and visual adaptation assets.
-
-The goal of this project is to demonstrate proficiency in HTML5 banner development, GSAP animation, performance optimization, responsive design, and visual adaptation across multiple formats.
-
----
-
 ## Tech Stack
 
 - HTML5
